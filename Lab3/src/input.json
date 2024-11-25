@@ -1,0 +1,38 @@
+[
+    {
+        "type": "port",
+        "id": "port1",
+        "latitude": 46.4825,
+        "longitude": 30.7326
+    },
+    {
+        "type": "ship",
+        "id": "ship1",
+        "port_id": "port1",
+        "max_weight": 10000,
+        "max_containers": 20,
+        "max_heavy": 5,
+        "max_refrigerated": 5,
+        "max_liquid": 5,
+        "fuel_consumption_per_km": 0.5
+    },
+    {
+        "type": "container",
+        "id": "container1",
+        "weight": 200,
+        "port_id": "port1",
+        "special": "heavy"
+    },
+    {
+        "action": "load",
+        "ship_id": "ship1",
+        "port_id": "port1",
+        "container_id": "container1"
+    },
+    {
+        "action": "sail",
+        "ship_id": "ship1",
+        "port_id": "port1",
+        "destination_port_id": "port2"
+    }
+]

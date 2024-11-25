@@ -1,0 +1,11 @@
+[
+    {"type": "port", "id": 1, "latitude": 45.0, "longitude": 30.0},
+    {"type": "port", "id": 2, "latitude": 48.0, "longitude": 32.0},
+    {"type": "ship", "id": "S1", "port_id": 1, "fuel": 10000, "max_weight": 30000, "max_containers": 10, "max_heavy": 5, "max_refrigerated": 3, "max_liquid": 2, "fuel_consumption_per_km": 1},
+    {"type": "container", "id": "C1", "weight": 1000, "port_id": 1, "special": null},
+    {"type": "container", "id": "C2", "weight": 4000, "port_id": 1, "special": "R"},
+    {"type": "action", "action": "load", "ship_id": "S1", "container_id": "C1"},
+    {"type": "action", "action": "sail_to", "ship_id": "S1", "destination_port_id": 2},
+    {"type": "action", "action": "unload", "ship_id": "S1", "container_id": "C1"},
+    {"type": "action", "action": "refuel", "ship_id": "S1", "amount": 5000}
+]
