@@ -12,7 +12,7 @@ class Customer:
         self.last_name: str = last_name
         self.age: int = age
         self.operators: List = operators
-        self.bills: List = bills
+        self.bills: List = bills[Bill]
         self.limiting_amount: float = 1000.0
 
     def talk(self, minutes: float, customer: Self, operator_id: int) -> None:
